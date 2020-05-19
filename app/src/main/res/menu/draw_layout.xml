@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_collection"
+            android:title="我的收藏"
+            android:icon="@drawable/collectone"
+            android:visible="true"/>
+        <item
+            android:id="@+id/my_asset"
+            android:icon="@drawable/asset"
+            android:title="我的资产"
+            android:visible="true"/>
+        <item
+            android:id="@+id/my_chat"
+            android:icon="@drawable/chat"
+            android:title="我的聊天"
+            android:visible="true"/>
+        <item
+            android:id="@+id/my_download"
+            android:title="我的下载"
+            android:icon="@drawable/download"
+            android:visible="true"/>
+        <item
+            android:id="@+id/normalNotify"
+            android:icon="@drawable/collectone"
+            android:title="普通通知栏"/>
+        <item
+            android:id="@+id/largeNotification"
+            android:icon="@drawable/collect"
+            android:title="下拉通知栏"/>
+        <item
+            android:title="悬浮通知栏"
+            android:id="@+id/floatNotification"
+            android:icon="@drawable/collect"/>
+    </group>
+</menu>

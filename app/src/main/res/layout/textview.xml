@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--text view文本组件
+        功能强大，不能直接定义text view边框，可以在drawable绘制布局文件，再适应到text view的background中
+        阴影效果/超文本/绘制图像/字符大小写/...-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:textSize="20pt"
+        android:drawableRight="@mipmap/ic_launcher"/>
+    <TextView
+        android:layout_width="68pt"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/ic_launcher"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize = "29dp"
+        android:text= "邮件是1264332116@qq.com,电话是 18717769105"
+        android:autoLink="email|phone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20pt"
+        android:text = "测试阴影效果"
+        android:shadowColor="#00f"
+        android:shadowDx="10.0"
+        android:shadowDy="8.0"
+        android:shadowRadius="3.0"/>
+    <CheckedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文本省略文本省略文本省略"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:textSize="20pt"/>
+
+
+</LinearLayout>

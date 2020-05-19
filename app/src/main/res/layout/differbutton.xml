@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--Button
+            RadioGroup-RadioButton单选按钮；radio button 之间默认竖直排列
+            多个checkbox复选按钮；使用linear layout竖直排列
+            switch开关
+            toggle button开关-->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别测验"
+                android:textSize="20dp"/>
+            <RadioGroup
+                android:id="@+id/genderGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/manGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="i'm a man "/>
+                <RadioButton
+                    android:id="@+id/womanGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="i'm a woman"/>
+            </RadioGroup>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="先要吃什么"
+                android:textSize="20dp"/>
+            <LinearLayout
+                android:orientation="vertical">
+                <CheckBox
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="水果"/>
+                <CheckBox
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="蔬菜"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="饮料"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <ToggleButton
+                android:id="@+id/togglebutton"
+                android:textOff="关灯"
+                android:textOn="开灯"
+                android:checked="true"/>
+        </TableRow>
+        <TableRow>
+            <Switch
+                android:textOn="开关打开"
+                android:textOff="开关关闭"
+                android:showText="true"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/getRegisterResult"
+                android:text="获取注册结果"/>
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

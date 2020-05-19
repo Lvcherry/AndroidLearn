@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+    <string name="button1">BUTTON1</string>
+    <string name="button2">BUTTON2</string>
+    <string name="toConstraintLayout">约束布局</string>
+    <string name="toFrameLayout">帧布局</string>
+    <string name="toTableLayout">表格布局</string>
+    <string name="toLinearLayout">线性布局</string>
+    <string name="toButtons">按钮组件</string>
+    <string name="toTextView">文本框组件</string>
+    <string name="toast">Toast</string>
+    <string name="scrollView">滚动视图</string>
+    <string name="simpleDialog">简单对话框</string>
+    <string name="viewDialog">自定义视图对话框</string>
+    <string name="configurationChanged">系统设置回调</string>
+    <string name="getConfiguration">获取系统设置</string>
+    <string name="username">请输入用户名</string>
+    <string name="password">请输入密码</string>
+    <string name="gender">选择性别并返回</string>
+    <string name="highLight">高亮文本框</string>
+    <string name="welcome">欢迎来到尚米网络</string>
+    <string name="contract">联系我们：134**</string>
+    <string name="channel_name">通道名称</string>
+    <string name="channel_description">通道描述</string>
+</resources>

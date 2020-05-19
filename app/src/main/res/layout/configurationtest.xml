@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <com.example.testapplication.layout.TopLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/toptitle"/>
+    </com.example.testapplication.layout.TopLayout>
+    <Button
+        android:id="@+id/getConfiguration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/getConfiguration"/>
+    <TextView
+        android:id="@+id/changeConfiguration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="点击更改屏幕方向"
+        android:clickable="true"/>
+    <TextView
+        android:id="@+id/getOrientation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="系统设置发生了什么改变"
+        android:gravity="center_horizontal"/>
+</LinearLayout>

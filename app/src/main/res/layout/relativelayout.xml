@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/changeRelativeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改父组件位置"/>
+
+    <ImageView
+        android:id="@+id/RelativeViewImage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_below="@id/changeRelativeView"/>
+    <ImageView
+        android:id="@+id/RelativeViewImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_toRightOf="@id/RelativeViewImage1"
+        android:layout_below="@id/RelativeViewImage1"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/RelativeViewImage2"/>
+    <Button
+        android:id="@+id/getRelativeImageSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取父组件大小"
+        android:layout_below="@id/changeRelativeView"
+        android:layout_toRightOf="@id/RelativeViewImage1"/>
+    <TextView
+        android:id="@+id/showRelativeImageSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="显示父组件大小"
+        android:layout_below="@id/getRelativeImageSize"
+        android:layout_alignLeft="@id/getRelativeImageSize"/>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/inputData"
+            android:hint="输入要存入的数据"/>
+        <TextView
+            android:id="@+id/input"
+            android:text="存入sharedPreferences"
+            android:background="@drawable/framebutton"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/getAllData"
+            android:text="取出数据"
+            android:background="@drawable/radiusbutton"/>
+
+    </TableLayout>
+
+</LinearLayout>
